@@ -142,7 +142,7 @@ const Hero = () => {
             <directionalLight position={[1, 2, 3]} />
             <Sphere args={[1, 200, 100]} scale={2.5}>
               <MeshDistortMaterial
-                color="#220736"
+                color="#000033"
                 attach="material"
                 distort={0.4}
                 speed={2}
