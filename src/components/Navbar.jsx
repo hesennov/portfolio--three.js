@@ -15,7 +15,7 @@ const Container = styled.div`
 const Links = styled.div`
   display: flex;
   align-items: center;
-  gap: 50px;
+  /* gap: 50px;  */
 `;
 const Logo = styled.img`
   height: 150px;
@@ -59,14 +59,14 @@ const Navbar = () => {
       <Container>
         <Links>
           <Logo src="./img/logo2.png" />
+        </Links>
+        <Icons>
           <List>
             <ListItem>Home</ListItem>
             <ListItem>About</ListItem>
             <ListItem>Works</ListItem>
             <ListItem>Contact</ListItem>
           </List>
-        </Links>
-        <Icons>
           <Icon src="./img/search.png" />
           <Button>Hire now</Button>
         </Icons>

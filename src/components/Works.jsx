@@ -1,6 +1,10 @@
+import { useState } from "react";
 import styled from "styled-components";
+import WebDesign from "./WebDesign";
+import FrontEnd from "./FrontEnd";
+import BackEnd from "./BackEnd";
 
-const data = ["Web Design", "Development", "Back End ", " Marketing"];
+const data = ["Web Design", "Front-End", "Back-End "];
 
 const Section = styled.div`
   height: 100vh;
@@ -21,8 +25,8 @@ const Left = styled.div`
 const List = styled.ul`
   list-style: none;
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  flex-direction: column;
 `;
 const ListItem = styled.li`
   font-size: 100px;
@@ -37,7 +41,7 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
-    color: pink;
+    color: #000099;
     width: 0;
     overflow: hidden;
   }
@@ -58,19 +62,29 @@ const Right = styled.div`
 `;
 
 const Works = () => {
+  const [work, setWork] = useState("Web Design");
   return (
     <Section>
       <Container>
         <Left>
           <List>
             {data.map((item) => (
-              <ListItem key={item} text={item}>
+              <ListItem key={item} text={item} onClick={() => setWork(item)}>
                 {item}{" "}
               </ListItem>
             ))}
           </List>
         </Left>
-        <Right></Right>
+        <Right>
+          {work === "Web Design" ? (
+            <WebDesign />
+        
+          ) : work === "Front-End" ? (
+            <FrontEnd />
+          ) : (
+            <BackEnd />
+          )}
+        </Right>
       </Container>
     </Section>
   );

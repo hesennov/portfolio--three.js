@@ -15,7 +15,7 @@ const Map = () => {
         rotate: [-20.0, -50.0, 0],
         center: [28, -4],
         //yaxinliq
-        scale: 600,
+        scale: 900,
       }}
       style={{ width: "100%", height: "100%" }}
     >
