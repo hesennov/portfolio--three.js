@@ -1,6 +1,6 @@
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Computer from "./Three-Gplb/Computer";
+import Computer from "../Three-Gplb/Computer";
 const WebDesign = () => {
   return (
     // <Canvas>
