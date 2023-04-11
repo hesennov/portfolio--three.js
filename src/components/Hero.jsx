@@ -118,7 +118,7 @@ const Hero = () => {
       <Navbar />
       <Container>
         <Left>
-          <Title>I am Hesen Hesenov</Title>
+          <Title>I am Hasan Hasanov</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>What We Do</Subtitle>

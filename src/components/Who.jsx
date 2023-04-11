@@ -94,7 +94,7 @@ const Who = () => {
             <Line src="./img/line.png" />
             <Subtitle>Who we are</Subtitle>
           </WhatWeDo>
-          <Desc>WE DO WHAT WE LOVE</Desc>
+          <Desc>I do what I love</Desc>
           <Button> see our works</Button>
         </Right>
       </Container>
