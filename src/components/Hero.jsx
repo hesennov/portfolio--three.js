@@ -134,7 +134,7 @@ const Hero = () => {
         </Left>
         <Right>
           {/* 3d modal. */}
-          <Canvas camera={{ fov: 60, position: [2, 1, -5] }}>
+          <Canvas camera={{ fov: 55, position: [2, 1, -5] }}>
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
