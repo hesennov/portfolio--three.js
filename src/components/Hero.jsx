@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Navbar from "./Navbar";
-import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-
+import Logo from "./Three-Gplb/Logo";
+import ModelDraco from "./Three-Gplb/ModelDraco";
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -81,36 +82,38 @@ const Button = styled.button`
 
 const Right = styled.div`
   flex: 3;
-  position: relative;
+  /* position: relative; */
+  justify-content: center;
+  margin-top: 200px;
   @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
   }
 `;
 
-const Img = styled.img`
-  width: 700px;
-  height: 600px;
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  animation: animate 2s infinite ease alternate;
+// const Img = styled.img`
+//   width: 700px;
+//   height: 600px;
+//   object-fit: contain;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+//   animation: animate 2s infinite ease alternate;
 
-  @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
-  }
+//   @media only screen and (max-width: 768px) {
+//     width: 300px;
+//     height: 300px;
+//   }
 
-  @keyframes animate {
-    to {
-      transform: translateY(20px);
-    }
-  }
-`;
+//   @keyframes animate {
+//     to {
+//       transform: translateY(20px);
+//     }
+//   }
+// `;
 
 const Hero = () => {
   return (
@@ -131,26 +134,15 @@ const Hero = () => {
         </Left>
         <Right>
           {/* 3d modal. */}
-          <Canvas
-          // camera={{ fov: 25, position: [5, 5, 5] }}
-          >
-            <OrbitControls
-              enableZoom={false}
-              // autoRotate
-            />
+          <Canvas camera={{ fov: 60, position: [5, 2, -1] }}>
+            <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
-            <directionalLight position={[1, 2, 3]} />
-            <Sphere args={[1, 200, 100]} scale={2.5}>
-              <MeshDistortMaterial
-                color="#000033"
-                attach="material"
-                distort={0.4}
-                speed={2}
-              />
-            </Sphere>
+            <directionalLight position={[3, 2, 1]} />
+            <Logo />
+            {/* <ModelDraco/> */}
           </Canvas>
           {/* <Img src="./img/moon.png" /> */}
-          <Img src="./img/HarryPotter.png" />
+          {/* <Img src="./img/HarryPotter.png" /> */}
         </Right>
       </Container>
     </Section>

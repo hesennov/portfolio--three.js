@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import Logo from "./Three-Gplb/Logo";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+// import ModelDraco from "./Three-Gplb/ModelDraco";
 
 const Section = styled.div`
   display: flex;
@@ -22,12 +26,13 @@ const Container = styled.div`
 const Links = styled.div`
   display: flex;
   align-items: center;
+
   /* gap: 50px;  */
 `;
-const Logo = styled.img`
-  height: 150px;
-  background-size: cover;
-`;
+// const Logo = styled.img`
+//   height: 150px;
+//   background-size: cover;
+// `;
 const List = styled.ul`
   display: flex;
   justify-content: space-between;
@@ -60,6 +65,7 @@ const Button = styled.button`
 const Icons = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
   gap: 20px;
 `;
 
@@ -68,7 +74,14 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/logo2.png" />
+          {/* <Logo src="./img/logo2.png" /> */}
+          <Canvas camera={{ fov: 60, position: [2, 2, -5] }}>
+            <OrbitControls enableZoom={false} autoRotate />
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+            <Logo />
+            {/* <ModelDraco/> */}
+          </Canvas>
         </Links>
         <Icons>
           <List>
