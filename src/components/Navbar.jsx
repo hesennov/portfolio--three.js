@@ -75,7 +75,7 @@ const Navbar = () => {
       <Container>
         <Links>
           {/* <Logo src="./img/logo2.png" /> */}
-          <Canvas camera={{ fov: 60, position: [2, 2, -5] }}>
+          <Canvas camera={{ fov: 60, position: [2, 1, -5] }}>
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
