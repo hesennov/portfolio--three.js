@@ -4,6 +4,9 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Logo from "./Three-Gplb/Logo";
 import ModelDraco from "./Three-Gplb/ModelDraco";
+import { useRef, useEffect } from "react";
+import * as THREE from "three";
+import "../App.css";
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -88,6 +91,7 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
+    margin-top: 10px;
   }
 `;
 
@@ -116,6 +120,17 @@ const Right = styled.div`
 // `;
 
 const Hero = () => {
+  const canvasRef = useRef(null);
+
+  // useEffect(() => {
+  //   const canvas = canvasRef.current;
+
+  //   const renderer = new THREE.WebGLRenderer({ canvas });
+  //   renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+
+  //   // ...
+  // }, []);
+
   return (
     <Section>
       <Navbar />
