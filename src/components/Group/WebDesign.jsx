@@ -16,7 +16,7 @@ const WebDesign = () => {
     //   <OrbitControls />
     // </Canvas>
     <Canvas camera={{ fov: 30, position: [5, 2, -1] }}>
-      <OrbitControls enableZoom={false} autoRotate />
+      <OrbitControls enableZoom={false} autoRotate  />
       <ambientLight intensity={1} />
       <directionalLight position={[3, 2, 1]} />
       <Computer />

@@ -128,7 +128,7 @@ const Hero = () => {
   //   const renderer = new THREE.WebGLRenderer({ canvas });
   //   renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
 
-  //   // ...
+    // ...
   // }, []);
 
   return (

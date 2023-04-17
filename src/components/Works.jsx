@@ -31,8 +31,6 @@ const Left = styled.div`
     padding: 20px;
     justify-content: center;
   }
-
-
 `;
 const List = styled.ul`
   list-style: none;

@@ -1,6 +1,6 @@
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import React from "../Three-Gplb/React";
+import React from "../Th treeree-Gplb/React";
 const FrontEnd = () => {
   return (
     <Canvas camera={{ fov: 70, position: [5, 2, -1] }}>
