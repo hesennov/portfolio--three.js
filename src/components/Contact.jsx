@@ -66,8 +66,6 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
-
-  
 `;
 
 const Contact = () => {

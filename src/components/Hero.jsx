@@ -128,7 +128,7 @@ const Hero = () => {
   //   const renderer = new THREE.WebGLRenderer({ canvas });
   //   renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
 
-    // ...
+  // ...
   // }, []);
 
   return (
@@ -137,10 +137,10 @@ const Hero = () => {
       <Container>
         <Left>
           <Title>I am Hasan Hasanov</Title>
-          <WhatWeDo>
+          <div className="flex items-center gap-3">
             <Line src="./img/line.png" />
             <Subtitle>What We Do</Subtitle>
-          </WhatWeDo>
+          </div>
           <Desc>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             animi ipsa assumenda ea magni tempore?

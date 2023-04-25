@@ -20,6 +20,7 @@
     "react-simple-maps": "^3.0.0",
     "sass": "^1.58.3",
     "styled-components": "^5.3.8",
+    "tailwind": "^4.0.0",
     "three": "^0.151.3"
   },
   "devDependencies": {
