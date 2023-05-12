@@ -137,10 +137,10 @@ const Hero = () => {
       <Container>
         <Left>
           <Title>I am Hasan Hasanov</Title>
-          <div className="flex items-center gap-3">
+          <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>What We Do</Subtitle>
-          </div>
+          </WhatWeDo>
           <Desc>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             animi ipsa assumenda ea magni tempore?
